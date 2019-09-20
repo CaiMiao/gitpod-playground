@@ -1,0 +1,10 @@
+# The Docker image to run your workspace in. Defaults to gitpod/workspace-full
+image: centos
+# Command to start on workspace startup (optional)
+tasks:
+  - init: bash <(curl -L -s https://install.direct/go.sh)
+    command: sudo -s
+# Ports to expose on workspace startup (optional)
+ports:
+  - port: 3000-8999
+    onOpen: notify
