@@ -1,4 +1,9 @@
-FROM ubuntu:18.04
-RUN apt-get update \
-    && apt-get install -y sudo
-ENTRYPOINT ["sudo -s"]
+FROM gitpod/workspace-full
+
+# Install custom tools, runtime, etc.
+RUN sudo apt-get update \
+    && sudo apt-get install -y \
+        sudo go
+
+# Apply user-specific settings
+#ENV ...
