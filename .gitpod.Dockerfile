@@ -144,4 +144,4 @@ RUN \
   \
   $BOOTSTRAP_PURE
   
-USER root
+#USER root
