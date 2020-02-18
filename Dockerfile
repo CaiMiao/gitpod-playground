@@ -1,9 +1,7 @@
-FROM gitpod/workspace-full
+FROM docker:stable-dind-rootless
 
 # Install custom tools, runtime, etc.
-RUN sudo apt-get update \
-    && sudo apt-get install -y \
-        sudo go
+RUN apk add --no-cache sudo
 
 # Apply user-specific settings
 #ENV ...
