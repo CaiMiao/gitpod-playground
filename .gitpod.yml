@@ -1,6 +1,6 @@
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
 image:
-  file: Dockerfile
+  file: .gitpod.Dockerfile
 # Command to start on workspace startup (optional)
 tasks:
  # - before: echo "before stage" && sudo -s
