@@ -1,6 +1,5 @@
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image:
-  file: .gitpod.Dockerfile
+image: docker:stable-dind-rootless
 # Command to start on workspace startup (optional)
 tasks:
   - before: echo "before stage" && sudo -s
