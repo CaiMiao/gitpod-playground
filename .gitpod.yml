@@ -1,5 +1,5 @@
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image: v2ray/official
+image: docker
 # Command to start on workspace startup (optional)
 tasks:
   - before: echo "before stage" && sudo -s
