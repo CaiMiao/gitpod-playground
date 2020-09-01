@@ -10,6 +10,8 @@ MAINTAINER Péter Szilágyi <peterke@gmail.com>
 # Mark the image as xgo enabled to support xgo-in-xgo
 ENV XGO_IN_XGO 1
 
+#RUN mkdir /workspace && chmod a+rw /workspace
+RUN mkdir /go && chmod a+rw /go
 
 # Configure the Go environment, since it's not going to change
 ENV PATH   /usr/local/go/bin:$PATH
